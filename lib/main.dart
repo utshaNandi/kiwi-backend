@@ -859,7 +859,7 @@ class _DotMatrixTypewriterState extends State<_DotMatrixTypewriter>
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: _cursorCtrl,
-      builder: (_, __) {
+      builder: (_, _) {
         final current = widget.text.substring(0, _charCount);
         final done = _charCount == widget.text.length;
         final showCursor = done ? (_cursorCtrl.value > 0.5) : true;
